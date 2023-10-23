@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def renderS13(request):
     data={
+        "card": "c2",
         "Modelo":"S13",
         'src':'images/S13.jpg',
         'color':"Azul",
@@ -14,8 +15,9 @@ def renderS13(request):
 
 def renderR33(request):
     data={
+        "card": "c2",
         "Modelo":"R33",
-        'src':'images/S13.jpg',
+        'src':'images/r33.jpg',
         'color':"gris",
         'motor': "RB26DETT",
         'año':'1995',
@@ -25,8 +27,9 @@ def renderR33(request):
 
 def render350z(request):
     data={
+        "card": "c2",
         "Modelo":"350z",
-        'src':'images/S13.jpg',
+        'src':'images/350z.jpg',
         'color':"Figura de Acción",
         'motor': "VQ35DE",
         'año':'2004',
@@ -36,8 +39,9 @@ def render350z(request):
 
 def render240z(request):
     data={
+        "card": "c2",
         "Modelo":"240z",
-        'src':'images/S13.jpg',
+        'src':'images/240z.webp',
         'color':"Figura de Acción",
         'motor': "DOHC",
         'año':'1975',
@@ -47,6 +51,6 @@ def render240z(request):
 
 def renderAutos(request):
     data={
-        "card" : 'margin-left:40%; display: none;'
+        "card" : 'c1'
     }
     return render(request, "templatesAutos/index.html",data)
